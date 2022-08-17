@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encryptor</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="app">
+    <!--* Header page -->
+        <header class="header">
+            <nav class="header__nav">
+                <a href="./index.html" class="header__link">
+                    <svg width="32" height="48" viewBox="0 0 32 48" fill="#0A3871" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M23.3958 23.6529C23.3524 23.9311 23.2466 24.1959 23.0863 24.4275C22.926 24.659 22.7154 24.8512 22.4703 24.9898C21.9766 25.3086 21.5447 25.468 21.1077 25.6274C20.177 25.9488 19.1974 26.2702 18.1613 26.643C17.0687 27.0157 16.0891 27.3885 15.215 27.6585C14.1249 28.0313 13.0888 28.3526 12.1041 28.7254C11.3633 29.0425 10.6674 29.4556 10.0345 29.9544C9.44584 30.4877 8.93212 31.0983 8.50734 31.7695C8.07027 32.515 7.79518 33.4766 7.79518 34.5975C7.79518 36.842 8.34022 38.5491 9.43289 39.6161C10.523 40.7396 12.5438 41.2718 15.5389 41.2718C18.5933 41.2718 20.6655 40.6856 21.7607 39.5107C22.8482 38.3357 23.3932 36.6826 23.3932 34.5487V23.6529H23.3958ZM15.5415 0C20.8891 0 24.815 1.01553 27.3217 3.09802C29.831 5.12908 31.0856 7.74119 31.0856 10.8366V37.2148C31.0856 38.2817 30.8696 39.4567 30.4891 40.737C30.1035 42.0225 29.3425 43.1949 28.1418 44.2592C26.9977 45.3313 25.4166 46.2389 23.3984 46.933C21.3802 47.6272 18.7629 48 15.5441 48C12.3304 48 9.70798 47.6272 7.69234 46.933C5.6767 46.2389 4.09298 45.3313 2.9489 44.2592C1.8846 43.3001 1.07834 42.089 0.604178 40.737C0.218532 39.4592 0 38.2843 0 37.2174V33.001C0 30.7565 0.599036 28.674 1.79968 26.8563C3.00032 24.9898 4.68945 23.7095 6.8722 22.9073C7.96229 22.5345 9.21693 22.1618 10.6335 21.681C12.0527 21.1976 13.3588 20.7169 14.6699 20.2927C15.9811 19.8633 17.1252 19.434 18.1048 19.0586C18.6959 18.8221 19.2963 18.6094 19.9044 18.421L20.8866 17.9402C21.2722 17.7268 21.6501 17.4055 22.0332 16.9787C22.4137 16.5545 22.7402 16.0737 23.0153 15.5389C23.306 14.9599 23.4557 14.3203 23.4524 13.6724V11.9627C23.4564 11.3361 23.3249 10.716 23.0667 10.145C22.8508 9.5023 22.4137 8.91612 21.8147 8.38393C21.2156 7.84917 20.3955 7.42239 19.416 7.09845C18.4338 6.78222 17.1278 6.62025 15.6521 6.62025C12.5977 6.62025 10.5795 7.21157 9.48945 8.43535C8.5639 9.50488 8.01885 10.8392 7.91087 12.3329C7.91087 12.6543 7.63835 12.8677 7.30927 12.8677L0.658168 12.9757C0.500177 12.9764 0.348309 12.9146 0.235632 12.8039C0.122956 12.6931 0.0585941 12.5423 0.0565613 12.3844V10.8418C0.0565613 9.3429 0.331655 7.95458 0.930691 6.62025C1.5323 5.28334 2.46042 4.16497 3.71248 3.20086C4.96711 2.24189 6.60482 1.44231 8.56647 0.907552C10.4767 0.26481 12.8214 0 15.5467 0H15.5415Z"/>
+                    </svg>
+                </a>
+            </nav>
+        </header>
+
+    <!--* Main content -->
+        <main class="main">
+            <section id="card" class="card">
+                <div class="card__text">
+                    <textarea id="text" class="text" placeholder="input your text here" autofocus="true"></textarea>
+                </div>
+                <div class="card__button">
+                    <button id="encrypt" type="button" class="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+                            <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/>
+                        </svg>
+                        Encriptar
+                    </button>
+                    <button id="decrypt" type="button" class="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-unlock" viewBox="0 0 16 16">
+                            <path d="M11 1a2 2 0 0 0-2 2v4a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h5V3a3 3 0 0 1 6 0v4a.5.5 0 0 1-1 0V3a2 2 0 0 0-2-2zM3 8a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1H3z"/>
+                        </svg>
+                        Desencriptar
+                    </button>
+                </div>
+            </section>
+
+            <section id="cardDecrypt" class="card card--decryptor">
+                <div id="cardDecryptLogo"class="card__logo card__logo--active">
+                    <img src="./assets/img/search.svg" alt="card logo">
+                </div>
+                <div id="cardDecryptText" class="card__text card__text--decryptor">
+                    <h2>Ningun Mensaje encontrado</h2>
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+            </section>
+        </main>
+
+    <!--* Footer page -->
+        <footer class="footer">
+            <div class="footer__social">
+                <a href="https://github.com/brayanrbx" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="black"  class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="footer__text">
+                <p>
+                    Copyright &copy; 2022 - Hanged
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./js/app.js" type="module"></script>
+</body>
+</html>
